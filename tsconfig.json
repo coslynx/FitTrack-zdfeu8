@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "types": [
+      "next-auth/types",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom/index.d.ts",
+      "@types/supabase",
+      "zustand"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "resolveJsonModule": true
+  },
+  "include": [
+    "next.config.js",
+    "pages/**/*.{ts,tsx}",
+    "components/**/*.{ts,tsx}",
+    "styles/**/*.{ts,tsx}",
+    "utils/**/*.{ts,tsx}",
+    "app/**/*.{ts,tsx}",
+    "prisma/**/*.{ts,tsx}"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "dist"
+  ]
+}
